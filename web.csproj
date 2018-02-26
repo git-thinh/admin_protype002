@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E64D8538-F91C-4945-9808-30175A56C470}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>web</RootNamespace>
+    <AssemblyName>web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="User.cs" />
+    <Compile Include="pushDB.cs" />
+    <Compile Include="Img.cs" />
+    <Compile Include="Api.cs" />
+    <Compile Include="Article.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="ListBase.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\ConcurrentDictionary.cs" />
+    <Compile Include="System\ReaderWriterLockSlim.cs" />
+    <Compile Include="System\System.Collections.Generic\HashSet.cs" />
+    <Compile Include="System\System.Collections.Generic\ISet.cs" />
+    <Compile Include="System\System.IO.MemoryMappedFiles\FileMapIOException.cs" />
+    <Compile Include="System\System.IO.MemoryMappedFiles\MapViewStream.cs" />
+    <Compile Include="System\System.IO.MemoryMappedFiles\MemoryMappedFile.cs" />
+    <Compile Include="System\System.IO.MemoryMappedFiles\Win32APIs.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Dynamic\System.Linq.Dynamic.v2.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\BinaryExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ConditionalExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ConstantExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ElementInit.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\EmitContext.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\Expression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ExpressionPrinter.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ExpressionTransformer.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ExpressionType.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ExpressionVisitor.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\Expression_T.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\Extensions.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\InvocationExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\LambdaExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ListInitExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\MemberAssignment.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\MemberBinding.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\MemberBindingType.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\MemberExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\MemberInitExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\MemberListBinding.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\MemberMemberBinding.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\MethodCallExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\NewArrayExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\NewExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\ParameterExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\TypeBinaryExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Expressions\UnaryExpression.cs" />
+    <Compile Include="System\System.Linq\System.Linq.Ext.cs" />
+    <Compile Include="System\System.Linq\System.Linq\Check.cs" />
+    <Compile Include="System\System.Linq\System.Linq\Enumerable.cs" />
+    <Compile Include="System\System.Linq\System.Linq\EnumerableExecutor.cs" />
+    <Compile Include="System\System.Linq\System.Linq\EnumerableExecutor_T.cs" />
+    <Compile Include="System\System.Linq\System.Linq\EnumerableQuery.cs" />
+    <Compile Include="System\System.Linq\System.Linq\EnumerableQuery_T.cs" />
+    <Compile Include="System\System.Linq\System.Linq\Grouping.cs" />
+    <Compile Include="System\System.Linq\System.Linq\IGrouping.cs" />
+    <Compile Include="System\System.Linq\System.Linq\ILookup_T.cs" />
+    <Compile Include="System\System.Linq\System.Linq\IOrderedEnumerable_T.cs" />
+    <Compile Include="System\System.Linq\System.Linq\IOrderedQueryable.cs" />
+    <Compile Include="System\System.Linq\System.Linq\IOrderedQueryable_T.cs" />
+    <Compile Include="System\System.Linq\System.Linq\IQueryable.cs" />
+    <Compile Include="System\System.Linq\System.Linq\IQueryable_T.cs" />
+    <Compile Include="System\System.Linq\System.Linq\IQueryProvider.cs" />
+    <Compile Include="System\System.Linq\System.Linq\Lookup.cs" />
+    <Compile Include="System\System.Linq\System.Linq\OrderedEnumerable.cs" />
+    <Compile Include="System\System.Linq\System.Linq\OrderedParallelQuery.cs" />
+    <Compile Include="System\System.Linq\System.Linq\OrderedSequence.cs" />
+    <Compile Include="System\System.Linq\System.Linq\ParallelEnumerable.cs" />
+    <Compile Include="System\System.Linq\System.Linq\ParallelExecutionMode.cs" />
+    <Compile Include="System\System.Linq\System.Linq\ParallelMergeOptions.cs" />
+    <Compile Include="System\System.Linq\System.Linq\ParallelQuery.cs" />
+    <Compile Include="System\System.Linq\System.Linq\Queryable.cs" />
+    <Compile Include="System\System.Linq\System.Linq\QueryableEnumerable.cs" />
+    <Compile Include="System\System.Linq\System.Linq\QueryableTransformer.cs" />
+    <Compile Include="System\System.Linq\System.Linq\QuickSort.cs" />
+    <Compile Include="System\System.Linq\System.Linq\SortContext.cs" />
+    <Compile Include="System\System.Linq\System.Linq\SortDirection.cs" />
+    <Compile Include="System\System.Linq\System.Linq\SortSequenceContext.cs" />
+    <Compile Include="System\System.Runtime.CompilerServices\ExecutionScope.cs" />
+    <Compile Include="System\System.Runtime.CompilerServices\ExtensionAttribute.cs" />
+    <Compile Include="System\System.Runtime.CompilerServices\IStrongBox.cs" />
+    <Compile Include="System\System.Runtime.CompilerServices\StrongBox_T.cs" />
+    <Compile Include="System\System\Action.cs" />
+    <Compile Include="System\System\Func.cs" />
+    <Compile Include="System\ThreadSafeCache.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\Newtonsoft.Json.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DLL\Newtonsoft.Json.dll.refresh" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+G:\web\web\DLL\web.dll
+G:\web\web\DLL\web.pdb
+G:\web\web\obj\Debug\web.dll
+G:\web\web\obj\Debug\web.pdb
+G:\web\Bin\web.dll
+G:\web\Bin\web.pdb
+G:\web\web\obj\Debug\web.csprojResolveAssemblyReference.cache
+D:\_EL\web\test\Bin\web.dll
+D:\_EL\web\test\Bin\web.pdb
+D:\_EL\web\test\web\obj\Debug\web.csprojResolveAssemblyReference.cache
+D:\_EL\web\test\web\obj\Debug\web.dll
+D:\_EL\web\test\web\obj\Debug\web.pdb
+D:\_EL\web\Bin\web.dll
+D:\_EL\web\Bin\web.pdb
+D:\_EL\web\web\obj\Debug\web.dll
+D:\_EL\web\web\obj\Debug\web.pdb
+D:\_EL\web\web\obj\Debug\web.csprojResolveAssemblyReference.cache
